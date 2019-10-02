@@ -15,7 +15,12 @@ namespace ClassesIntro
 
         public void Bark()
         {
-            MessageBox.Show("Bark");
+            MessageBox.Show("Bark! Bork! Biork! Barque!");
+        }
+
+        public void SayName()
+        {
+            MessageBox.Show(Name);
         }
 
         public Dog() { }
