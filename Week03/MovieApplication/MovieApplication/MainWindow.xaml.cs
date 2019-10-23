@@ -22,7 +22,7 @@ namespace MovieApplication
     public partial class MainWindow : Window
     {
 
-        ObservableCollections<Movie> movieList = new List<Movie>();
+        ObservableCollection<Movie> movieList = new ObservableCollection<Movie>();
 
         //List<Movie> movieList = new List<Movie>();
 
@@ -49,12 +49,19 @@ namespace MovieApplication
             //submitedMovie.ReviewScore = Convert.ToDouble(ReviewScoreTextBox.Text);
             //submittedMovie.ReviewScore = Double.Parse(ReviewScoreTextBox.Text);
 
-            submittedMovie.DisplayInformation();
+            //submittedMovie.DisplayInformation();
 
             TitleTextBox.Clear();
             GenreTextBox.Clear();
             ReviewScoreTextBox.Clear();
 
+        }
+
+        private void movieListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Movie selectedMovie = movieListView.SelectedItem as Movie;
+
+            selectedMovie.DisplayInformation();
         }
     }
 }
