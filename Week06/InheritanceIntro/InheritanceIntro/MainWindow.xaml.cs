@@ -49,6 +49,15 @@ namespace InheritanceIntro
             {
                 d.SayName();
             }
+
+            Duck duck = new InheritanceIntro.Duck(102, "Duck of the Silver Turoc");
+            duck.SayName();
+        }
+
+        private void quackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Duck duck = new Duck(12, "Duck of the Silver Turoc");
+            duck.Quack();
         }
     }
 }
