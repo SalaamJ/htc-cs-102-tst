@@ -15,19 +15,23 @@ namespace MovieApplication
         //public string Genre;
         public double ReviewScore { get; set; }
         //public double ReviewScore;
+        public string Director { get; set; }
+        public string Length { get; set; }
 
         public List<string> Actors;
 
-        public Movie(string title, string genre, double reviewScore)
+        public Movie(string title, string genre, double reviewScore, string director, string length)
         {
             Title = title;
             Genre = genre;
             ReviewScore = reviewScore;
+            Director = director;
+            Length = length;
         }
 
         public void DisplayInformation()
         {
-            MessageBox.Show($"Title:{Title} \n Genre:{Genre} \n ReviewScore:{ReviewScore}");
+            MessageBox.Show($"Title:{Title} \n Genre:{Genre} \n ReviewScore:{ReviewScore} \n Director:{Director} \n Length:{Length}");
         }
     }
 }

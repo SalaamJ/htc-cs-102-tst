@@ -41,7 +41,9 @@ namespace MovieApplication
         {
             Movie submittedMovie = new Movie(TitleTextBox.Text, 
                                             GenreTextBox.Text, 
-                                            Double.Parse(ReviewScoreTextBox.Text));
+                                            Double.Parse(ReviewScoreTextBox.Text),
+                                            DirectorTextBox.Text,
+                                            LengthTextBox.Text);
 
             movieList.Add(submittedMovie);
             //submittedMovie.Title = TitleTextBox.Text;
@@ -54,6 +56,8 @@ namespace MovieApplication
             TitleTextBox.Clear();
             GenreTextBox.Clear();
             ReviewScoreTextBox.Clear();
+            DirectorTextBox.Clear();
+            LengthTextBox.Clear();
 
         }
 
