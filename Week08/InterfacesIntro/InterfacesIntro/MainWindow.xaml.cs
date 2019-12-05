@@ -22,21 +22,23 @@ namespace InterfacesIntro
     public partial class MainWindow : Window
     {
 
-        public ObservableCollection<Animal> Animals;
+        public ObservableCollection<IWalker> Animals;
 
         public MainWindow()
         {
             InitializeComponent();
-            Animals = new ObservableCollection<Animal>();
+            Animals = new ObservableCollection<IWalker>();
 
             // make siome aminals
-            Frog frog = new Frog(4,"Bart",true);
-            Dog dog = new Dog("Labradoodle", 35, "Pax");
-            Duck duck = new Duck(4, "Moo");
+            Frog frog = new Frog( true, 4,"Bart", 4, 5.5);
+            Dog dog = new Dog("Labradoodle", 35, "Pax", 4, 10.1);
+            Duck duck = new Duck(4, "Moo", 7.3, 2);
+            StarwarsRobot C3PO = new StarwarsRobot(9, 8.8, 2);
 
             Animals.Add(frog);
             Animals.Add(dog);
             Animals.Add(duck);
+            Animals.Add(C3PO);
 
             lvAnimals.ItemsSource = Animals;
         }
@@ -54,7 +56,7 @@ namespace InterfacesIntro
 			Animal selectedAnimal = lvAnimals.SelectedItem as Animal;
 			if (selectedAnimal != null)
 			{
-				selectedAnimal.Speak();
+				selectedAnimal.walk();
 			}
 		}
 	}

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Rigged_Blackjack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rigged_Blackjack"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="567.81" Width="731.983">
+    <Grid>
+        <Button x:Name="cardDraw1" Content="Draw Card 1" HorizontalAlignment="Left" Height="46" Margin="46,36,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="cardDraw2" Content="Draw Card 2" HorizontalAlignment="Left" Height="46" Margin="46,87,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="cardDraw3" Content="Draw Card 3" HorizontalAlignment="Left" Height="46" Margin="46,138,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="cardDraw4" Content="Draw Card 4" HorizontalAlignment="Left" Height="46" Margin="46,189,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="dealerCard1" Content="Dealer Card 1" HorizontalAlignment="Left" Height="46" Margin="46,240,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="dealerCard2" Content="Dealer Card 2" HorizontalAlignment="Left" Height="46" Margin="46,291,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="dealerCard3" Content="Dealer Card 3" HorizontalAlignment="Left" Height="46" Margin="46,342,0,0" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="378" Margin="250,36,0,0" VerticalAlignment="Top" Width="406"/>
+    </Grid>
+</Window>
