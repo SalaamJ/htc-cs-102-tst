@@ -21,56 +21,68 @@ namespace Rigged_Blackjack
     public partial class MainWindow : Window
     {
         Random rnd = new Random();
+        int CardA;
+        int CardB;
+        int CardC;
+        int CardD;
+        int CardE;
+        int CardF;
+        int CardG;
+
         public MainWindow()
         {
             InitializeComponent();
         }
-        private void cardDraw1_Click(object sender, RoutedEventArgs e)
+        private void DrawCardA_Click(object sender, RoutedEventArgs e)
         {
-            int card1 = randomCard();
+            CardA = randomCard();
         }
-        private void cardDraw2_Click(object sender, RoutedEventArgs e)
+        private void DrawCardB_Click(object sender, RoutedEventArgs e)
         {
-
+            CardB = randomCard();
         }
-        private void cardDraw3_Click(object sender, RoutedEventArgs e)
+        private void DrawCardC_Click(object sender, RoutedEventArgs e)
         {
-
+            CardC = randomCard();
         }
-        private void cardDraw4_Click(object sender, RoutedEventArgs e)
+        private void DrawCardD_Click(object sender, RoutedEventArgs e)
         {
-
+            CardD = randomCard();
         }
-        private void cardDrawD1_Click(object sender, RoutedEventArgs e)
+        private void DrawCardE_Click(object sender, RoutedEventArgs e)
         {
-
+            CardE = randomCard();
         }
-        private void cardDrawD2_Click(object sender, RoutedEventArgs e)
+        private void DrawCardF_Click(object sender, RoutedEventArgs e)
         {
-
+            CardF = randomCard();
         }
-        private void cardDrawD3_Click(object sender, RoutedEventArgs e)
+        private void DrawCardG_Click(object sender, RoutedEventArgs e)
         {
-
+            CardG = randomCard();
         }
         public int randomCard()
         {
-            int cardDraw1 = rnd.Next(2, 12);
-            return cardDraw1;
+            return rnd.Next(1, 13);
         }
         public void Random()
         {
             Random rnd = new Random();
-            int cardDraw1 = rnd.Next(2, 12);
-            int cardDraw2 = rnd.Next(2, 12);
-            int cardDraw3 = rnd.Next(2, 12);
-            int cardDraw4 = rnd.Next(2, 12);
-            int dealerCard1 = cardDraw1 + 1;
-            int dealerCard2 = cardDraw2 + 1;
-            int dealerCard3 = cardDraw3 - 1;
+            int DrawCardA = rnd.Next(1, 13);
+            int DrawCardB = rnd.Next(1, 13);
+            int DrawCardC = rnd.Next(1, 13);
+            int DrawCardD = rnd.Next(1, 13);
+            int DrawCardE = rnd.Next(1, 13);
+            int DrawCardF = rnd.Next(1, 13);
+            int DrawCardG = rnd.Next(1, 13);
         }
 
-        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Cards_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Cards_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rigged Blackjack", "Rigged Blackjack\Rigged Blackjack.csproj", "{513D4D06-994A-4EA0-8FC5-73E0EC972271}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{989E65EC-D950-41E7-9F26-4E662BF2C216}"
-	ProjectSection(SolutionItems) = preProject
-		Yeet.cs = Yeet.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

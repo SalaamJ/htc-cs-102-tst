@@ -5,15 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Rigged_Blackjack"
         mc:Ignorable="d"
-        Title="MainWindow" Height="567.81" Width="731.983">
+        Title="MainWindow" Height="567.81" Width="968.983">
     <Grid>
-        <Button x:Name="cardDraw1" Content="Draw Card 1" HorizontalAlignment="Left" Height="46" Margin="46,36,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="cardDraw2" Content="Draw Card 2" HorizontalAlignment="Left" Height="46" Margin="46,87,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="cardDraw3" Content="Draw Card 3" HorizontalAlignment="Left" Height="46" Margin="46,138,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="cardDraw4" Content="Draw Card 4" HorizontalAlignment="Left" Height="46" Margin="46,189,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="dealerCard1" Content="Dealer Card 1" HorizontalAlignment="Left" Height="46" Margin="46,240,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="dealerCard2" Content="Dealer Card 2" HorizontalAlignment="Left" Height="46" Margin="46,291,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="dealerCard3" Content="Dealer Card 3" HorizontalAlignment="Left" Height="46" Margin="46,342,0,0" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="378" Margin="250,36,0,0" VerticalAlignment="Top" Width="406"/>
+        <Button x:Name="DrawCardA" Content="Draw Card 1" HorizontalAlignment="Left" Height="46" Margin="46,36,0,0" VerticalAlignment="Top" Width="120" Click="DrawCardA_Click"/>
+        <Button x:Name="DrawCardB" Content="Draw Card 2" HorizontalAlignment="Left" Height="46" Margin="46,87,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DrawCardC" Content="Draw Card 3" HorizontalAlignment="Left" Height="46" Margin="46,138,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DrawCardD" Content="Draw Card 4" HorizontalAlignment="Left" Height="46" Margin="46,189,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DrawCardE" Content="Dealer Card 1" HorizontalAlignment="Left" Height="46" Margin="46,240,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DrawCardF" Content="Dealer Card 2" HorizontalAlignment="Left" Height="46" Margin="46,291,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DrawCardG" Content="Dealer Card 3" HorizontalAlignment="Left" Height="46" Margin="46,342,0,0" VerticalAlignment="Top" Width="120"/>
+        <ListView x:Name="Cards" HorizontalAlignment="Left" Height="352" Margin="198,43,0,0" VerticalAlignment="Top" Width="722" MouseDoubleClick="Cards_MouseDoubleClick" SelectionChanged="Cards_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="Draw Card 1" DisplayMemberBinding="{Binding CardA}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Draw Card 2" DisplayMemberBinding="{Binding CardB}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Draw Card 3" DisplayMemberBinding="{Binding CardC}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Draw Card 4" DisplayMemberBinding="{Binding CardD}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Dealer Card 1" DisplayMemberBinding="{Binding CardE}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Dealer Card 2" DisplayMemberBinding="{Binding CardF}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Dealer Card 3" DisplayMemberBinding="{Binding CardG}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>
